@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Ar_Tour</title>
+    <link rel="icon" type="image/png/mp4" href="images/AR-Tour Logo.png"/>
+
+</head>
+<body>
+
+<button onclick="document.getElementById('loginForm').style.display='block'">Login</button>
+<button onclick="document.getElementById('registerForm').style.display='block'">Register</button>
+
+<div id="loginForm" class="modal">
+  <form class="modal-content" action="login.php" method="post">
+    <span class="close" onclick="document.getElementById('loginForm').style.display='none'">&times;</span>
+    <h2>Welcome to Artour Admin</h2>
+    <h2>Login</h2>
+    <div class="container">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit">Login</button>
+    </div>
+  </form>
+</div>
+
+<div id="registerForm" class="modal">
+  <form class="modal-content" action="register.php" method="post">
+    <span class="close" onclick="document.getElementById('registerForm').style.display='none'">&times;</span>
+    <h2>Register</h2>
+    <div class="container">
+      <label for="register_username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="register_username" required>
+
+      <label for="register_password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="register_password" required>
+
+      <button type="submit">Register</button>
+    </div>
+  </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html> 
